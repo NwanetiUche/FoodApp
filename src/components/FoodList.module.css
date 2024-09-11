@@ -1,0 +1,13 @@
+.fooditem {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+/* =========Responsiveness for Small Device========== */
+@media screen and (max-width: 600px) {
+  .fooditem {
+    flex-direction: column;
+    justify-content: center;
+  }
+}

@@ -35,3 +35,9 @@
   justify-content: space-around;
   text-align: center;
 }
+/* =========Responsiveness for Small Device========== */
+@media screen and (max-width: 600px) {
+  .itemContainer {
+    width: 85%;
+  }
+}

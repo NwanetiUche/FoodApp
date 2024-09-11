@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import styles from "./fooditem.module.css";
 export default function FoodItem({ food, setFoodId }) {
   return (
@@ -7,16 +8,18 @@ export default function FoodItem({ food, setFoodId }) {
         <p className={styles.itemName}>{food.title}</p>
       </div>
       <div className={styles.buttonContainer}>
-        <button
-          onClick={() => {
-            console.log(food.id);
-            setFoodId(food.id);
-          }}
-          className={styles.itemButton}
-        >
-          {" "}
-          View Recipe
-        </button>
+        <Link to="/fooddetails">
+          <button
+            onClick={() => {
+              console.log(food.id);
+              setFoodId(food.id);
+            }}
+            className={styles.itemButton}
+          >
+            {" "}
+            View Recipe
+          </button>
+        </Link>
       </div>
     </div>
   );

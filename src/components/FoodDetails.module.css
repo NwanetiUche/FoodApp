@@ -1,4 +1,36 @@
 .Container {
   box-shadow: 0 4px 6px rgb(0, 0, 0, 0.2);
   padding: 15px;
+
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgb(0, 0, 0, 0.2);
+  margin: 20px;
+  overflow: hidden;
+  font-family: Polysans, sans-serif;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.Ingredients {
+  display: flex;
+  height: auto;
+}
+div ol li {
+  font-size: large;
+  font-weight: 600;
+}
+
+.foodtitle {
+  width: 70%;
+
+  margin: 20px;
+
+  font-family: Polysans, sans-serif;
+}
+.itemImage {
+  width: 100%;
+  object-fit: cover;
+  height: auto;
+  border-radius: 20px;
 }
